@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+{% load static %}
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/font-icons.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!--[if lt IE 9]>
+    	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/plugins.js' %}"></script>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>Mile to Smiles</title>
+
+</head>
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+        ============================================= -->
+        <header id="header" class="transparent full-header dark" data-sticky-class="not-dark">
+            <div id="header-wrap">
+
+                <div class="container clearfix">
+
+                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                    <!-- Logo
+                    ============================================= -->
+                    <div id="logo">
+                        <a href="index.html" class="standard-logo" data-dark-logo="{% static 'images/M-2.png' %}"><img src="{% static 'images/M-2.png' %}" alt="Mile to Smile Logo"></a>
+                        <a href="index.html" class="retina-logo" data-dark-logo="{% static 'images/M-2.png' %}"><img src="{% static 'images/M-2.png' %}" alt="Mile to Smile Logo"></a>
+                    </div>
+                    <!-- #logo end -->
+
+                    <!-- Primary Navigation
+                    ============================================= -->
+                    <nav id="primary-menu">
+                        <ul>
+                            <li>
+                                <a href="destinations.html">
+                                    <div>destinations</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tour-package.html">
+                                    <div>tour packages</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="highlights.html">
+                                    <div>highlights</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tour-package.html">
+                                    <div>tour experiences</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html">
+                                    <div>responsible tourism</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html">
+                                    <div>about</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog.html">
+                                    <div>blog-vlog</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html">
+                                    <div>contact</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- #primary-menu end -->
+                </div>
+            </div>
+
+        </header>
+        <!-- #header end -->
+
+        <section id="slider" class="slider swiper_wrapper full-screen clearfix" style="    position: absolute;
+        z-index: 9;">
+
+            <div class="swiper-container swiper-parent">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide dark">
+                        <div class="container clearfix">
+                            <div class="slider-caption slider-caption-center">
+                                <p data-caption-animate="fadeInUp" data-caption-delay="100">where <span style="color: #FFC922;">do you desire</span> to go?</p>
+                            </div>
+                        </div>
+                        <div class="video-wrap">
+                            <video poster="images/atikh-bana-Ycds-2.png" preload="auto" loop autoplay muted>
+                                <source src='{% static 'images/videos/explore.webm' %}' type='video/webm' />
+                                <source src='{% static 'images/videos/explore.mp4' %}' type='video/mp4' />
+                            </video>
+                            <div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <script>
+                jQuery(document).ready(function($) {
+                    var swiperSlider = new Swiper('.swiper-parent', {});
+                });
+            </script>
+        </section>
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+                <section>
+                    <div class="container clearfix">
+                        <div class="col_full_destinations">
+                            <div class="destinations-holder">
+                                <div class="d-scale">E </div>
+                                <div class="d-triangle"></div>
+                                <div class="d-text">Ethiopia</div>
+                            </div>
+                            <div class="destinations-holder">
+                                <div class="d-scale">E </div>
+                                <div class="d-triangle"></div>
+                                <div class="d-text">Eritrea</div>
+                            </div>
+                            <div class="destinations-holder">
+                                <div class="d-scale">s </div>
+                                <div class="d-triangle"></div>
+                                <div class="d-text">Seychelles</div>
+                            </div>
+                            <div class="destinations-holder">
+                                <div class="d-scale">i</div>
+                                <div class="d-triangle"></div>
+                                <div class="d-text">Italy</div>
+                            </div>
+                            <div class="destinations-holder">
+                                <div class="d-scale">v</div>
+                                <div class="d-triangle"></div>
+                                <div class="d-text">Vatican City</div>
+                            </div>
+                            <div class="destinations-holder">
+                                <div class="d-scale">f </div>
+                                <div class="d-triangle"></div>
+                                <div class="d-text">France</div>
+                            </div>
+                            <div class="destinations-holder">
+                                <div class="d-scale">g</div>
+                                <div class="d-triangle"></div>
+                                <div class="d-text">Germany</div>
+                            </div>
+                            <div class="destinations-holder">
+                                <div class="d-scale">h </div>
+                                <div class="d-triangle"></div>
+                                <div class="d-text">Holland</div>
+                            </div>
+                            <div class="destinations-holder">
+                                <div class="d-scale">b</div>
+                                <div class="d-triangle"></div>
+                                <div class="d-text">Belgium</div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </section>
+                <div class="clear"></div>
+                <!-- about us -->
+                <section>
+                    <div class="container clearfix">
+                        <div class="col_full">
+                            <div class="col_one_third ">
+                                <img src="images/m-41.png" class="about-us-img" alt="">
+                            </div>
+                            <div class="col_two_third">
+                                <h1 class="about-us ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                    facilisis. <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+                                    lacus vel facilisis. <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+                                    accumsan lacus vel facilisis. </h1>
+                                <br>
+                                <a style="width: 25%;" href="#" class="button button-small ">learn more</a>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- about us -->
+                    <div class="clear"></div>
+
+                </section>
+                <!-- tour package -->
+                <section>
+                    <div class="container-g">
+                        <div class="col_full_packages">
+                            <h1 class="title-packages center-div"><span style="color: #FFC922;">Popular </span> Tour Packages</h1>
+
+                            <div class="packages-holder">
+                                <div class="item-container">
+                                    <div class="col_55_packages" style="background-color: #31909B;">
+                                        <div class="item-packages-holder">
+                                            <div class="item-img">
+                                                <div class="price-tag">
+                                                    <h1 class="starting">Starting from</h1>
+                                                    <h1 class="starting-price">12,000 ETB</h1>
+                                                    <div class="corner"> </div>
+                                                </div>
+                                                <img src="images/pgirl.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col_30_packages">
+                                        <div class="item-packages-holder-two">
+                                            <div class="center-div">
+                                                <h1 class="packages-type">The Paternoster</h1>
+                                                <h1 class="packages-list"> <i class="icon-calendar"></i> 12days <i class="icon-line2-directions"></i> 12days</h1>
+                                                <h1 class="packages-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h1>
+                                            </div>
+                                            <div class="center-div">
+                                                <button class="btn  see-more-btn " type="submit">more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col_15_packages">
+                                        <div class="item-packages-holder">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1958.4419813211668!2d37.97132501295939!3d10.9721303776559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x16457604560ef0af%3A0x25832c618a20e87!2sKeraniyo!5e0!3m2!1sen!2set!4v1606382057507!5m2!1sen!2set"
+                                                width="auto" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="packages-holder">
+                                <div class="item-container">
+                                    <div class="col_55_packages" style="background-color: #31909B;">
+                                        <div class="item-packages-holder">
+                                            <div class="item-img">
+                                                <div class="price-tag">
+                                                    <h1 class="starting">Starting from</h1>
+                                                    <h1 class="starting-price">12,000 ETB</h1>
+                                                    <div class="corner"> </div>
+                                                </div>
+                                                <img src="images/pgirl.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col_30_packages">
+                                        <div class="item-packages-holder-two">
+                                            <div class="center-div">
+                                                <h1 class="packages-type">The Paternoster</h1>
+                                                <h1 class="packages-list"> <i class="icon-calendar"></i> 12days <i class="icon-line2-directions"></i> 12days</h1>
+                                                <h1 class="packages-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h1>
+                                            </div>
+                                            <div class="center-div">
+                                                <button class="btn  see-more-btn " type="submit">more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col_15_packages">
+                                        <div class="item-packages-holder">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1958.4419813211668!2d37.97132501295939!3d10.9721303776559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x16457604560ef0af%3A0x25832c618a20e87!2sKeraniyo!5e0!3m2!1sen!2set!4v1606382057507!5m2!1sen!2set"
+                                                width="auto" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <!-- tour package -->
+
+                <!-- why you choose us -->
+                <section>
+                    <div class="container-g">
+                        <div class="col_chose_one">
+                            <div class="book-holder ">
+                                <h1 class="book center-div">Book with us <span style="color: #FFC922;"><br> Because...</span></h1>
+                            </div>
+                        </div>
+                        <div class="col_chose_two" style="height: 185px;">
+                            <div class="col_book_one">
+                                <img src="images/moving.png" class="book-img" alt="">
+                            </div>
+                            <div class="col_book_two">
+                                <h1 class="book-title">We have <span style="color: #FFC922;">Flexible Payment</span> </h>
+                                    <h1 class="book-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </h1>
+                                    <h1 class="book-num">01</h1>
+
+                            </div>
+                        </div>
+                        <div class="col_chose_two" style="height: 185px;">
+                            <div class="col_book_one">
+                                <img src="images/moving.png" class="book-img" alt="">
+                            </div>
+                            <div class="col_book_two">
+                                <h2 class="book-title">We have <span style="color: #FFC922;">Flexible Deposit</span> </h2>
+                                <h1 class="book-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </h1>
+                                <h1 class="book-num">02</h1>
+                            </div>
+                        </div>
+                        <div class="col_chose_two" style="height: 185px;">
+                            <div class="col_book_one">
+                                <img src="images/moving.png" class="book-img" alt="">
+                            </div>
+                            <div class="col_book_two">
+                                <h2 class="book-title">We have <span style="color: #FFC922;">No Change Fees</span> policy</h2>
+                                <h1 class="book-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </h1>
+                                <h1 class="book-num">03</h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- why you choose us -->
+
+
+                <!-- testimonials -->
+                <section>
+                    <div class="container-f">
+                        <div class="col_testi_full">
+                            <div class="col_testi_two_third">
+                                <div class="section parallax " style="background-image: url(&quot;images/para.png&quot;); padding: 100px 0px; background-position: 50% -227.334px;" data-stellar-background-ratio="0.3">
+
+                                    <div id="oc-testi" class="owl-carousel testimonials-carousel ">
+                                        <div class="oc-item">
+                                            <div class="testimonial-body">
+                                                <div class="testimonial center-div2">
+                                                    <div class="testi-content ">
+                                                        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+                                                            accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                                                            Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elis.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial-body2">
+                                                <div class="testi-meta testimonial-name rotate">
+                                                    Nahom Abiy
+                                                    <span class="testimonial-position">Programmer Programmer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <script type="text/javascript">
+                                        jQuery(document).ready(function($) {
+                                            var ocTesti = $("#oc-testi");
+                                            ocTesti.owlCarousel({
+
+                                                nav: true,
+                                                navText: ['<i class="icon-angle-down"></i>', '<i class="icon-angle-up"></i>'],
+                                                dots: false,
+                                                responsive: {
+                                                    0: {
+                                                        items: 1
+                                                    },
+                                                    768: {
+                                                        items: 1
+                                                    },
+                                                    992: {
+                                                        items: 1
+                                                    }
+                                                }
+                                            });
+                                        });
+                                    </script>
+
+                                </div>
+                            </div>
+                            <div class="col_testi_one_third">
+                                <h1 class="testimonial-title center-div">What <br><span style="color: #FFC922;"> People say</span> <br>About us</h1>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+                <!-- testimonials -->
+
+
+                <!-- blog post -->
+                <section>
+                    <div class="container-f">
+                        <div class="col_blog_full">
+                            <div class="col_blog_one_fourth">
+                                <img src="images/fabrizio.png" class="blog-img" alt="">
+                            </div>
+                            <div class="col_blog_one_fourth">
+                                <div class="blog-grid-holder">
+                                    <div class="center-div">
+                                        <h1 class="blog-type">History</h1>
+                                        <h1 class="blog-title">A small Town in Belgium</h1>
+                                        <h1 class="blog-by">by Mike Winger - Jan 12, 2021</h1>
+                                    </div>
+                                    <div style="    margin-left: 25.5%;
+                                   display: inline-block;
+                                   margin-top: -40px;"><a href="#" class="button button-small">READ full story</a> </div>
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="col_blog_one_fourth">
+                                <img src="images/pizza.png" class="blog-img" alt="">
+                            </div>
+                            <div class="col_blog_one_fourth">
+                                <div class="blog-grid-holder">
+                                    <div class="center-div">
+                                        <h1 class="blog-type">Myth or Reality</h1>
+                                        <h1 class="blog-title">Italian Pizza</h1>
+                                        <h1 class="blog-by">by Mike Winger - Jan 12, 2021</h1>
+                                    </div>
+                                    <div style="    margin-left: 25.5%;
+                                   display: inline-block;
+                                   margin-top: -40px;"><a href="#" class="button button-small">READ full story</a> </div>
+                                </div>
+
+                            </div>
+                            <div class="col_blog_one_fourth">
+                                <div class="blog-grid-holder">
+                                    <div class="center-div">
+                                        <h1 class="blog-type" style="text-align: right;">Travel Stories</h1>
+                                        <h1 class="blog-title" style="text-align: right;">A Million dollar Smile</h1>
+                                        <h1 class="blog-by" style="text-align: right;">by Mike Winger - Jan 12, 2021</h1>
+                                    </div>
+                                    <div style="    margin-right: 25.5%;
+                                   display: inline-block;
+                                   margin-top: -40px;"><a href="#" class="button button-small2">READ full story</a> </div>
+                                </div>
+                            </div>
+                            <div class="col_blog_one_fourth">
+                                <img src="images/girl.png" class="blog-img" alt="">
+                            </div>
+                            <div class="col_blog_one_fourth">
+                                <div class="blog-grid-holder">
+                                    <div class="center-div">
+                                        <h1 class="blog-type" style="text-align: right;">Traditions</h1>
+                                        <h1 class="blog-title" style="text-align: right;">Ethiopian Bliss in a Cup</h1>
+                                        <h1 class="blog-by" style="text-align: right;">by Mike Winger - Jan 12, 2021</h1>
+                                    </div>
+                                    <div style="    margin-right: 25.5%;
+                                   display: inline-block;
+                                   margin-top: -40px;"><a href="#" class="button button-small2">READ full story</a> </div>
+                                </div>
+                            </div>
+                            <div class="col_blog_one_fourth">
+                                <img src="images/coffee.png" class="blog-img" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+                <!-- blog post -->
+
+
+            </div>
+
+        </section>
+        <!-- #content end -->
+
+        <!-- Footer
+        ============================================= -->
+        <footer id="footer" class="dark">
+
+            <div class="container-f">
+
+                <!-- Footer Widgets
+                ============================================= -->
+                <div class="footer-widgets-wrap clearfix">
+
+
+
+                    <div class="col_one_sixth">
+
+                        <div class="widget clearfix center-div">
+                            <div class="fright clearfix">
+                                <a href="#" class="social-icon si-dark si-colored si-facebook nobottommargin">
+                                    <i class="icon-facebook"></i>
+
+                                </a><br>
+                                <a href="#" class="social-icon si-dark si-colored si-facebook nobottommargin">
+                                    <i class="icon-instagram"></i>
+
+                                </a><br>
+                                <a href="#" class="social-icon si-dark si-colored si-facebook nobottommargin">
+                                    <i class="icon-twitter"></i>
+
+                                </a><br>
+                                <a href="#" class="social-icon si-dark si-colored si-facebook nobottommargin">
+                                    <i class="icon-google"></i>
+
+                                </a><br>
+                                <a href="#" class="social-icon si-dark si-colored si-facebook nobottommargin">
+                                    <i class="icon-pinterest"></i>
+
+                                </a><br>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col_black" style="background-color: #191919;">
+                        <div class="widget  clearfix center-div">
+                            <img src="images/M-49.png" class="footer-img"><br>
+                            <div class="footer-content ">
+                                <h1> Contact Details</h1>
+                                <h2>A: Arbegnoch street, ??? Bldg.,<br> 2nd floor, Office n. 321<br><br> T: +251 966 2541 00 (Office line)<br> +251 966 2541 01 (Cell phone)<br><br> F: 0112700000<br><br> E: m2smtours@gmail.com
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col_white ">
+
+                        <div class="widget  clearfix center-div">
+                            <div class="footer-content ">
+                                <h3> Destinations</h3>
+                                <a href="#"></a>
+                                <a href="#">Ethiopia</a><br>
+                                <a href="#"> Eritrea</a><br>
+                                <a href="#"> Seychelles</a><br>
+                                <a href="#"> Israel</a><br>
+                                <a href="#"> Italy</a><br>
+                                <a href="#"> Vatican City</a><br>
+                                <a href="#"> France</a><br>
+                                <a href="#"> Germany</a><br>
+                                <a href="#"> Holland</a><br>
+                                <a href="#"> Belgium</a>
+                                <h3>Partners</h3>
+                                <a href="#">Accommodations</a><br>
+                                <a href="#">Experts</a>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col_white_last">
+
+                        <div class="widget clearfix">
+                            <div class="footer-content ">
+                                <h3>Future Expansions
+                                </h3>
+                                <a href="#">Asmara and HoA branch offices </a> <br>
+                                <a href="#"> Accomodation construction (Lalibela, <br>Gherealta, SMNP, Bonga)</a><br>
+                                <a href="#"> Dairy Farm (Awassa)</a><br>
+                                <a href="#">Organic Agricultural Farming (Awassa)</a> <br>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="widget subscribe-widget clearfix">
+                            <div class="footer-content ">
+                                <h3>Newsletter</h3>
+                                <p>Join us today to receive the latest posts via email</p>
+                                <!-- <div class="input-group divcenter"> -->
+                                <!-- <span class="input-group-addon"></span> -->
+                                <!-- <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="enter your email here" style="height: 70px; width: 373px;"> -->
+                                <!-- </div> -->
+
+
+                                <div id="widget-subscribe-form-result" data-notify-type="success" data-notify-msg=""></div>
+                                <form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post" class="nobottommargin">
+                                    <div class="input-group divcenter">
+                                        <span class="input-group-addon"></span>
+                                        <textarea class="required form-control input-block-level short-textarea" id="quick-contact-form-message" name="message" rows="4" cols="30" placeholder="enter your email here"></textarea>
+                                        <input type="email" class="hidden" id="quick-contact-form-botcheck" name="quick-contact-form-botcheck" value="" />
+                                    </div>
+                                    <button class="btn btn-success" type="submit" style="float: right;">Subscribe</button>
+
+                                </form>
+                                <script type="text/javascript">
+                                    $("#widget-subscribe-form").validate({
+                                        submitHandler: function(form) {
+                                            $(form).find('.input-group-addon').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
+                                            $(form).ajaxSubmit({
+                                                target: '#widget-subscribe-form-result',
+                                                success: function() {
+                                                    $(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
+                                                    $('#widget-subscribe-form').find('.form-control').val('');
+                                                    $('#widget-subscribe-form-result').attr('data-notify-msg', $('#widget-subscribe-form-result').html()).html('');
+                                                    SEMICOLON.widget.notifications($('#widget-subscribe-form-result'));
+                                                }
+                                            });
+                                        }
+                                    });
+                                </script>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <!-- .footer-widgets-wrap end -->
+
+                </div>
+                <div id="copy-middle">
+                    <div class="container clearfix">
+                        <div class="col_full">
+                            <div class="col_half" style="float: right; width: 51%;">
+                                <div class="terms-title center-div">
+                                    <p style="margin-top: -50px;">Privacy and Disclaimer &nbsp;&nbsp;&nbsp;Terms of Use &nbsp;&nbsp;&nbsp;Cancellation Policy</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Copyrights
+            ============================================= -->
+                <div id="copyrights">
+
+                    <div class="container clearfix">
+
+                        <div class="col_half">
+                            <div class="copyrights-title center-div">
+                                <p style="text-align: right;">Website design by <strong><a href="https://www.behagerlij.com/" target="_blank"> Behagerlij.com</a></strong> </p>
+                            </div>
+                        </div>
+
+                        <div class="col_half col_last tright">
+                            <div class="copyrights-title center-div">
+                                <p>©2020 <strong>Harla Expeditions</strong> , all rights reserved.</p>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- #copyrights end -->
+
+        </footer>
+        <!-- #footer end -->
+
+        </div>
+        <!-- #wrapper end -->
+
+        <!-- Go To Top
+    ============================================= -->
+        <div id="gotoTop" class="icon-angle-up"></div>
+
+        <!-- Footer Scripts
+    ============================================= -->
+        <script type="text/javascript" src="{% static 'js/functions.js' %}"></script>
+
+</body>
+
+</html>
